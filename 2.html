@@ -3,26 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>My hobby</title>
+    <style>
+    #active {
+      color:red
+    }
+    .saw {
+    color: black
+    }
+    a {
+      text-decoration: none;
+      text color:black;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0px;
+      padding:5px;
+    }
+    ul{
+      border-right: solid 1px gray;
+      width:120px;
+      margin:0px;
+      padding-top:10px;
+      padding-left:50px;
+      font-size: 30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr
+    }
+    #article{
+      text-align: left;
+      padding-left: 40px;
+    }
+    </style>
   </head>
   <body>
-    <h3>List</h3>
-  <ul>
-    <li><a href="index.html">Home</li>
-    <li><a href="1.html">Daily life</a></li>
-    <li><a href="2.html">Hobby</a></li>
-    <li><a href="3.html">Friend</a></li>
-    <li><a href="4.html">HTML practice/notes<a></li>
-  </ul>
-<h1>My Hobby</h1>
-<h3>Basketball</h3>
-  <img src="Basketball.jpg"width="20%">
-  <p>I love to play <strong>basketball.</strong> I have started playing it since I was in middle school. At that moment, my friend taught me how to make a goal with lay-up shooting.
-    <br>In first try, I made a goal, and I felt amazing. I can say that is a <strong><u>moment that I fall in love with basketball.</u></strong>
-    <br>My favorite NBA team is <strong><u>OKC Thunder</u></strong>, Oklahoma City Thunder, I loved this team when KD and Westbrook were playing together.
-    <br>After they left the team, I kinda miss to see them playing together. But, now, I just expect to see Shai growing in OKC to lead us to winning the Championship.</p>
-<p style="margin-top: 40px;"><h3>Video Games</h3>
-  <img src="Video Games.jpg"width="20%">
-  <p>I also enjoy playing video games.</p>
+    <h1>My Hobby</h1>
+    <div id="grid">
+      <div>
+        <ul>
+          <li><a href="index.html" class="saw">Home</li>
+          <li><a href="1.html" class="saw">Daily life</a></li>
+          <li><a href="2.html" class="saw" id='active'>Hobby</a></li>
+          <li><a href="3.html" class="saw">Friend</a></li>
+          <li><a href="4.html" class="saw">Coding practice</a></li>
+        </ul>
+      </div>
+      <div id="article">
+        <div>
+          <h3>Basketball</h3>
+          <img src="Basketball.jpg"width="20%">
+            <p>I love to play <strong>basketball.</strong> I have started playing it since I was in middle school. At that moment, my friend taught me how to make a goal with lay-up shooting.
+            <br>In first try, I made a goal, and I felt amazing. I can say that is a <strong><u>moment that I fall in love with basketball.</u></strong>
+            <br>My favorite NBA team is <strong><u>OKC Thunder</u></strong>, Oklahoma City Thunder, I loved this team when KD and Westbrook were playing together.
+            <br>After they left the team, I kinda miss to see them playing together. But, now, I just expect to see Shai growing in OKC to lead us to winning the Championship.</p>
+            <p style="margin-top: 40px;"><h3>Video Games</h3>
+            <img src="Video Games.jpg"width="20%">
+            <p>I also enjoy playing video games.</p>
+          </div>
       <p><!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
