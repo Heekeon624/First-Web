@@ -3,38 +3,68 @@
 <head>
   <title>Daily Life</title>
   <meta charset="utf-8">
+  <style>
+  #active {
+    color:red
+  }
+  .saw {
+    color:black
+  }
+  a {
+    text-decoration: none;
+    color:black
+  }
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0px;
+    padding:5px;
+  }
+  ul{
+    border-right: solid 1px gray;
+    width:120px;
+    margin:0px;
+    padding-top:10px;
+    padding-left:50px;
+    font-size: 30px;
+  }
+  body {
+    margin:0px
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr
+  }
+  #article{
+    text-align: left;
+    padding-left: 50px;
+  }
+  </style>
 </head>
 <body>
-  <h3>List</h3>
-    <ul>
-    <li><a href="index.html">Home</li>
-    <li><a href="1.html">Daily life</a></li>
-    <li><a href="2.html">Hobby</a></li>
-    <li><a href="3.html">Friend</a></li>
-    <li><a href="4.html">HTML practice/notes<a></li>
-  </ul>
-<h1>My Diary</h1>
-<img src="Diary.jpg"width="20%">
-  <h3>June 25th</h3>
-  <p>Yesterday was <strong>my <u>birthday</u></strong>.<br>It was great to get celebrated by my favorite people.<br> I had a great meal and had fun with my people. And today is <strong>june 25th</strong>.<br>I am at the cafe nearby my house, and learning how to use HTML by watching video on the site named, <u>"Coding Everybody"</u></p>
-<p style="margin-top: 40px;"><h3>June.29th</h3>
-  <p>It's rain a lot today. I went to Kkachisan with JJM and PSK, eating Spiced Chicken and it was pretty good.</p>
-<p style="margin-top: 40px;"><h3>June.30</h3>
-  <p>It is the last day of june. I cannot believe I already spent half of 2020. It has been terrible year because of COVID-19, but since I'm having great time with my friends, it is pretty good.<br> I had the last English class today, think it was worth to finish it.<br> I have learned how to create server with 'GITHUB', it is pretty cool that I can actually run the server.</p>
-
+  <h1>My Diary</h1>
+  <div id="grid">
+    <div>
+      <ul>
+        <li><a href="index.html" class="saw">Home</li>
+        <li><a href="1.html" class="saw" id="active">Daily life</a></li>
+        <li><a href="2.html" class="saw">Hobby</a></li>
+        <li><a href="3.html" class="saw">Friend</a></li>
+        <li><a href="4.html" class="saw">Coding practice</a></li>
+      </ul>
+    </div>
+    <div id="article">
+      <div>
+      <h3>June 25th</h3>
+        <p>Yesterday was <strong>my <u>birthday</u></strong>.<br>It was great to get celebrated by my favorite people.<br> I had a great meal and had fun with my people. And today is <strong>june 25th</strong>.<br>I am at the cafe nearby my house, and learning how to use HTML by watching video on the site named, <u>"Coding Everybody"</u></p>
+        <p style="margin-top: 40px;"><h3>June.29th</h3>
+        <p>It's rain a lot today. I went to Kkachisan with JJM and PSK, eating Spiced Chicken and it was pretty good.</p>
+        <p style="margin-top: 40px;"><h3>June.30</h3>
+        <p>It is the last day of june. I cannot believe I already spent half of 2020. It has been terrible year because of COVID-19, but since I'm having great time with my friends, it is pretty good.<br> I had the last English class today, think it was worth to finish it.<br> I have learned how to create server with 'GITHUB', it is pretty cool that I can actually run the server.</p>
+        <img src="Diary.jpg"width="20%">
+    </div>
+  </div>
 <p style="margin-top: 40px;">
-      <p><!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5efda99a4a7c6258179bbf00/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script--></p>
 </body>
 </html>
